@@ -2,9 +2,75 @@
 <html>
 <head>
   <title>GlobalType Marketplace</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      color: #333;
+    }
+
+    header {
+      background: #111;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 48px;
+      letter-spacing: 2px;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 18px;
+      opacity: 0.8;
+    }
+
+    .categories {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 40px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .category {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      text-align: center;
+      font-size: 20px;
+      font-weight: bold;
+      text-decoration: none;
+      color: #111;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .category:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+  </style>
 </head>
+
 <body>
+
+<header>
   <h1>GlobalType Marketplace</h1>
-  <p>Site under construction — storefront coming soon.</p>
+  <p>Tools, kits, and learning gear for creators, makers, and explorers.</p>
+</header>
+
+<section class="categories">
+  <a class="category" href="store/language-learning/index.html">Language Learning</a>
+  <a class="category" href="store/maker-kits/index.html">Maker Kits</a>
+  <a class="category" href="store/rpi/index.html">Raspberry Pi</a>
+  <a class="category" href="store/tshirts/index.html">T‑Shirts</a>
+</section>
+
 </body>
 </html>
